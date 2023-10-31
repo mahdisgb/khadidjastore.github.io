@@ -164,7 +164,7 @@ main{
 @media (max-width:1080px) {
     .navbar{
         justify-content: space-between;
-        width: 100vw;
+        width: 100%;
         border-radius: 0;
     }
 }
