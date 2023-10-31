@@ -166,6 +166,8 @@ main{
         justify-content: space-between;
         width: 100%;
         border-radius: 0;
+        margin: 0;
+        padding: 0;
     }
 }
 @media (max-width:800px) {
