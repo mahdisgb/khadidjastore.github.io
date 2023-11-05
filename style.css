@@ -79,6 +79,7 @@ body{
 
 }
 .intro::before{
+    z-index: -1;
     content: '';
     background-image: url(store5.jpg);
     background-position: center;
