@@ -33,7 +33,7 @@ body{
 }
 /*Navbar*/
 .b-nav{
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-clr2);
 
 }
@@ -117,23 +117,37 @@ main{
     max-height: 100vh;
   }
   .main-grid{
-    max-width: 65vw;
+    width: 65%;
     margin: 0 auto;
   
   }
   .card{
-    width: 100%;
-    max-width: 290px;
-    height: 350px;
+    /* width: 100%; */
+    /* max-width: 260px; */
+    height: 270px;
     background-color: var(--clr1);
     position: relative;
+  }
+  .grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
   .card a{
     position: relative;
     color: black;
   }
+  .pro{
+    width: 100%;
+    /* overflow: hidden; */
+    height: 70%;
+    background-color: #ccc;
+    position: relative;
+  }
   .card a .pro img{
-    max-width: 95%;
+    /* max-width: 260px; */
+    width: 100%;
+    min-width: 140px;
     max-height: 240px; 
     height: 95%; 
     margin: 0 auto;
@@ -145,29 +159,23 @@ main{
   }
   .card a article p{
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 23px;
     text-align: center;
   }
   .pro{
     width: 100%;
-    height: 240px;
-    display: grid;
+    /* overflow: hidden; */
+    height: 70%;
     background-color: #ccc;
     position: relative;
   }
-  .grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
+  
 
 @media (max-width:1080px) {
     .navbar{
         justify-content: space-between;
         width: 100%;
         border-radius: 0;
-        margin: 0;
-        padding: 0;
     }
 }
 @media (max-width:800px) {
