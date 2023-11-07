@@ -169,6 +169,27 @@ main{
   }
   
 
+  /*footer*/
+  .contact{
+    margin-top: 2rem;
+    min-height: 275px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bg-clr);
+}
+.contact ul li a{
+    font-size: 1.5rem;
+    color: var(--clr1);
+    display: flex;
+    align-items: center;
+}
+.contact svg{
+    margin-right: 5px;
+    fill: var(--clr1);
+    width: 1.5rem;
+}
 @media (max-width:1080px) {
     .navbar{
         justify-content: space-between;
@@ -197,4 +218,11 @@ main{
     .loc a p{
         font-size: 1.5rem;
     }
-}
+    .contact{
+        margin-top: 2rem;
+        padding: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        min-height: 275px;
+    }
+   }
