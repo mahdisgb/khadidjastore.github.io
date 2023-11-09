@@ -23,6 +23,7 @@
 body{
     min-height: 100vh;
     font-family: cairo;
+
 }
 .pagecount{
     display: none;
@@ -81,7 +82,6 @@ body{
     align-items: center;
     justify-content: space-around;
     z-index: 3;
-
 
 }
 .intro::before{
@@ -150,11 +150,12 @@ main{
   }
   .card a .pro img{
     width: 100%;
-    min-width: 140px;
+    min-width: 119px;
     max-height: 240px; 
     height: 95%; 
     margin: 0 auto;
     transition: scale 200ms;
+    /* object-fit: cover; */
   }
   .card a .pro img:hover{
     scale: 1.05;
@@ -171,10 +172,8 @@ main{
     background-color: #ccc;
     position: relative;
   }
-  
-
   /*footer*/
-  .contact{
+.contact{
     margin-top: 2rem;
     min-height: 275px;
     width: 100%;
@@ -211,6 +210,7 @@ main{
     .loc a p{
         font-size: 1.5rem;
     }
+ 
 }
 @media (max-width:500px) {
     .intro h1{
@@ -229,4 +229,44 @@ main{
         flex-direction: column;
         min-height: 275px;
     }
-   }
+    .main-grid{
+        width: 80%;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+      }
+      .card a article p{
+        font-size: 1.1rem;
+        line-height: 23px;
+      }
+      .card a .pro img{
+        object-fit: cover;
+      }
+}
+@media (max-width:450px) {
+    /* .main-grid{
+        width: 80%;
+    } */
+    .grid {
+        gap: 9px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+}
+@media (max-width:400px) {
+    /* .main-grid{
+        width: 80%;
+    } */
+    .grid {
+        gap: 7px;
+        grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+      }
+}
+@media (max-width:350px) {
+    /* .main-grid{
+        width: 90%;
+    } */
+    .grid {
+        gap: 5px;
+        grid-template-columns: repeat(auto-fill, minmax(107px, 1fr));
+      }
+}
