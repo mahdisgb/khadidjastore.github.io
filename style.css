@@ -250,6 +250,9 @@ main{
     position: relative;
   }
   /*footer*/
+footer{
+    background-color: var(--sh5);
+}
 .contact{
     margin-top: 2rem;
     min-height: 275px;
